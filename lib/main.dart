@@ -6,9 +6,18 @@ void main() => runApp(MaterialApp(
         appBar: AppBar(
           title: Text("App Hello"),
         ),
-        body: Center(
-          child: Image.asset("images/img1.jpg"),
-          // child: Image.network("https://i.ytimg.com/vi/ODci_BNrlfs/maxresdefault.jpg"),
+        body: SafeArea(
+          child: Container(
+            width: 200,
+            height: 200,
+            margin: EdgeInsets.fromLTRB(20, 30, 0, 0),
+            padding: EdgeInsets.all(30),
+            decoration: BoxDecoration(
+              color: Colors.green,
+              shape: BoxShape.circle,
+            ),
+            child: Text("Container box"),
+          ),
         ),
       ),
     ));
