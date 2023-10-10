@@ -1,30 +1,42 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(
-      MaterialApp(
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text("App "),
-          ),
-          body: Column(
-            // mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+void main() => runApp(MaterialApp(
+      home: Scaffold(
+        body: SafeArea(
+          child: Column(
             children: [
-              Container(
-                color: Colors.green,
-                child: Text("Box 1"),
-              ),
-              Container(
+              Card(
                 color: Colors.orange,
-                child: Text("Box 2"),
+                child: Row(
+                  children: [
+                    CircleAvatar(
+                      backgroundImage: AssetImage("images/img1.jpg"),
+                      radius: 40,
+                    ),
+                    SizedBox(
+                      width: 50,
+                    ),
+                    Text("pizza")
+                  ],
+                ),
               ),
-              Container(
-                color: Colors.green,
-                child: Text("Box 3"),
+              Card(
+                color: Colors.orange,
+                child: Row(
+                  children: [
+                    CircleAvatar(
+                      backgroundImage: AssetImage("images/img1.jpg"),
+                      radius: 40,
+                    ),
+                    SizedBox(
+                      width: 50,
+                    ),
+                    Text("pizza")
+                  ],
+                ),
               )
             ],
           ),
         ),
       ),
-    );
+    ));
