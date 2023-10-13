@@ -7,7 +7,7 @@ void main() => runApp(
           appBar: AppBar(
             title: Text("App "),
           ),
-          body: Column(
+          body: Row(
             // mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
